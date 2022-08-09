@@ -16,8 +16,29 @@ let originalStory = `Hi! My name is ${userInputs[0]} and I have a secret to shar
     They are gross!! Keep that away from me! I save the world every night. But when I wake up in the
     morning, I go back to my normal life at ${userInputs[12]} School!`;
 
+// Total number of Questions
 let numberOfQuestions = 13;
 
+// All unique questions
+let questionArray = [
+    "Enter a name",
+    "Enter a noun(thing)",
+    "Enter a name",
+    "Enter a verb(action)",
+    "Enter a name",
+    "Enter a color",
+    "Enter a City(state)",
+    "Enter a verb(action)",
+    "Enter a verb(action)",
+    "Enter a verb(action)",
+    "Enter a noun",
+    "Enter a food",
+    "Enter a name of school"
+];
+
+for (let i = numberOfQuestions; i >= 0; i--) {
+    console.log(i);
+}
 
 
 
