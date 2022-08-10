@@ -16,8 +16,9 @@ let originalStory = `Hi! My name is ${userInputs[0]} and I have a secret to shar
     They are gross!! Keep that away from me! I save the world every night. But when I wake up in the
     morning, I go back to my normal life at ${userInputs[12]} School!`;
 
-// Total number of Questions
-let numberOfQuestions = 13;
+// Declaring Total number of Questions and counter
+let numberOfQuestions = 12;
+let questionCounter = 0;
 
 // All unique questions
 let questionArray = [
@@ -38,6 +39,9 @@ let questionArray = [
 
 for (let i = numberOfQuestions; i >= 0; i--) {
     console.log(i);
+    console.log(questionCounter);
+    console.log(questionArray[questionCounter]);
+    questionCounter++;
 }
 
 
