@@ -41,11 +41,14 @@ for (let i = numberOfQuestions; i >= 0; i--) {
     // console.log(i);
     // console.log(questionCounter);
     // console.log(questionArray[questionCounter]);
-    // questionCounter++;
-    console.log(questionArray[questionCounter++] + `; (${numberOfQuestions--} questions left)`);
-    // numberOfQuestions--;
+    console.log(questionArray[questionCounter] + `; (${numberOfQuestions} questions left)`);
+    userInputs.push(prompt(questionArray[questionCounter] + `; (${numberOfQuestions} questions left)`));
+    console.log(userInputs.slice(-1));
+    questionCounter++;
+    numberOfQuestions--;
 }
 
+alert("All done! Ready for your totally-accurate, not-at-all confusing story about " + userInputs.slice(0, 1) + "?");
 
 
 
